@@ -1,0 +1,206 @@
+body {
+  padding: 50px 0;
+}
+
+.row {
+  margin: 0 auto;
+}
+
+.block {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  margin: 20px 0;
+  padding: 10px;
+  width: 100%;
+  min-height: 200px;
+  border: 1px solid #ccc;
+  color: #fff;
+}
+
+
+/*............................. left-column*/
+
+.left-column {
+  flex-direction: row;
+}
+
+.left-column .block-title {
+  font-size: 16px;
+  font-weight: 700;
+  color: #3c3c3c;
+  letter-spacing: 1.6px;
+  text-transform: capitalize;
+}
+
+.left-column .bottom-block {
+  margin: 14px;
+  width: 167px;
+}
+
+.left-column .bottom-block .block-image-small {
+  width: 100%;
+  height: 100%;
+}
+
+.left-column .full-block .block-image-large  {
+  width: 240px;
+  height: 366px;
+}
+
+.left-column .full-block .block-image-large img {
+  width: 100%;
+  height: 100%;
+}
+
+.left-column .bottom-block .block-button {
+  
+  margin-top: 32px;
+  padding: 14px;
+  width: 100%;
+  font-size: 16px;
+  font-weight: 700;
+  letter-spacing: 1.6px;
+  color: #ffff;
+  background: gray;
+  border: none;
+}
+
+
+.left-column .bottom-title {
+  font-size: 24px;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 2.4px;
+  color: #3c3c3c;
+}
+
+
+.left-column .section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 24px;
+}
+
+
+
+
+
+/*............................. center-column*/
+
+.center-column {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.center-column .product-title,
+.center-column .product-description {
+  font-size: 18px;
+  color: #3c3c3c;
+}
+
+.center-column .product-title {
+  font-weight: 700;
+  text-transform: capitalize;
+  letter-spacing: 1.8px;
+}
+
+
+.center-column .product-title .name {
+  text-transform: uppercase;
+}
+
+.center-column .product-description {
+  padding: 14px 46px;
+  font-weight: 400;
+}
+
+
+
+
+
+
+
+
+/*............................. right-column*/
+
+.right-column {
+
+}
+
+.right-column .product-title {
+  font-weight: 700;
+  letter-spacing: 2.4px;
+  text-transform: uppercase;
+  color: #3c3c3c;
+}
+
+.right-column .product-title .name {
+  font-size: 26px;
+}
+
+.right-column .product-title .model {
+  font-size: 24px;
+  color: #a9ab86;
+}
+
+.right-column .product-block {
+  width: 100%;
+  color: #ffff;
+}
+
+.right-column .product-block .top-section {
+  margin-top: 8px;
+  padding: 0 12px;
+  background: #3c3c3c;
+}
+
+.right-column .product-block .center-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 8px;
+  color: #3c3c3c;
+  font-weight: 700;
+}
+
+.right-column .product-block .center-section .measurement {
+  display: flex;
+  align-items: center;
+}
+
+.right-column .product-block .center-section .measurement .input-section input {
+  width: 64px;
+  border: none;
+}
+
+.right-column .product-block .bottom-section {
+  display: flex;
+  justify-content: space-around;
+  background: darkgrey;
+}
+
+.center-section{
+  background-color: #E3E3E3;
+}
+
+.measure_width {
+  font-size: 13px;
+  margin-bottom: 15px;
+}
+
+.measure_height {
+  font-size: 13px
+}
+
+.door_price_section{
+  display: flex;
+  font-size: 30px;
+  width: 100%;
+  justify-content: flex-end;
+  font-weight: 500;
+}
