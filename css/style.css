@@ -27,7 +27,7 @@ body {
 }
 
 .left-column .block-title {
-  font-size: 16px;
+  font-size: 14px;
   font-weight: 700;
   color: #3c3c3c;
   letter-spacing: 1.6px;
@@ -44,9 +44,14 @@ body {
   height: 100%;
 }
 
-.left-column .full-block .block-image-large  {
+.left-column .full-block   {
   width: 240px;
   height: 366px;
+}
+
+.block-image-large{
+  width: 200px;
+  height: 320px;
 }
 
 .left-column .full-block .block-image-large img {
@@ -81,7 +86,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 24px;
+  padding: 16px;
 }
 
 
@@ -98,8 +103,62 @@ body {
 
 .center-column .product-title,
 .center-column .product-description {
-  font-size: 18px;
+  font-size: 14px;
   color: #3c3c3c;
+  position: relative;
+}
+
+.product-popup{
+  position: absolute;
+  width: 200px;
+  height: 250px;
+  background-color: blue;
+  z-index: 3;
+  display: flex;
+  flex-direction: column;
+}
+
+.pr-row{
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+  margin: 5px 5px;
+  font-size: 12px;
+}
+
+.first-color{
+  width: 60px;
+  background-color: #3c3c3c;
+}
+
+.second-color{
+  width: 60px;
+  background-color: black;
+}
+
+.third-color{
+  width: 60px;
+  background-color: white;
+}
+
+.fourth-color{
+  width: 60px;
+  background-color: #A9AB86;
+}
+
+.fifth-color{
+  width: 60px;
+  background-color: #3C3C3C;
+}
+
+.six-color{
+  width: 60px;
+  background-color: black;
+}
+
+.seven-color{
+  width: 60px;
+  background-color: #3c3c3c;
 }
 
 .center-column .product-title {
@@ -139,7 +198,7 @@ body {
 }
 
 .right-column .product-title .name {
-  font-size: 26px;
+  font-size: 20px;
 }
 
 .right-column .product-title .model {
@@ -289,3 +348,52 @@ input[type=radio]:checked + label{
 }
 
 
+.total_price_wrapper{
+  width: 100%;
+  background-color: #3C3C3C;
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+}
+
+.total_price_title{
+  font-size: 24px;
+  padding: 0 8px;
+}
+
+.total_price{
+  font-size: 33px;
+}
+
+.button-section{
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  margin-top: 7px;
+}
+
+.plus-button-wrapper{
+  border: 1px solid black;
+}
+
+.plus-minus-button{
+  color: black;
+  border-style: none;
+  width: 25px;
+  text-align: center;
+}
+
+.plus-button, .minus-button {
+  color:white;
+  background-color: #3C3C3C;
+  border-radius: 0;
+}
+
+
+
+.add-to-cart-button{
+  background-color: #3C3C3C;
+  padding: 6px 8px;
+  border: 1px solid transparent;
+  color: white;
+}
