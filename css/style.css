@@ -186,6 +186,7 @@ body {
 
 .center-section{
   background-color: #E3E3E3;
+  position: relative;
 }
 
 .measure_width {
@@ -195,6 +196,51 @@ body {
 
 .measure_height {
   font-size: 13px
+}
+
+.measurement_popup{
+  width: 200px;
+  height: 250px;
+  background-color: white;
+  position: absolute;
+  left: 38%;
+  top: 31%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.measurement_popup::before{
+  content: '';
+  background-color: white;
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  transform: rotate(45deg);
+  top: 0%;
+  z-index: 1;
+}
+
+.second_row, .third_row, .fourth_row, .fifth_row, .six_row {
+  display: flex;
+  width: 95%;
+  justify-content: space-around;
+}
+
+.ceil{
+  border: 1px solid black;
+  width: 30%;
+  height: 30px;
+  text-align: center;
+}
+
+.main_ceil{
+  border: 1px solid black;
+  width: 92%;
+  height: 30px;
+  text-align: center;
+  z-index: 2;
 }
 
 .door_price_section{
@@ -241,3 +287,5 @@ input[type=radio]:checked + label{
   justify-content: flex-end;
   font-weight: 500;
 }
+
+
