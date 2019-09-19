@@ -193,9 +193,6 @@ body {
 
 /*............................. right-column*/
 
-.right-column {
-
-}
 
 .right-column .product-title {
   font-weight: 700;
@@ -253,6 +250,23 @@ body {
 .center-section{
   background-color: #E3E3E3;
   position: relative;
+}
+
+.owl-carousel{
+  position: relative;
+}
+
+.owl-prev{
+  position: absolute;
+  top: 25px;
+  left: 0px;
+}
+
+.owl-next{
+  position: absolute;
+  top: 25px;
+  right: 0px;
+  width: 8px;
 }
 
 .measure_width {
