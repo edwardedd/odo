@@ -19,3 +19,6 @@
 // });
 
 
+function num(id){
+  return document.getElementById(id)
+}

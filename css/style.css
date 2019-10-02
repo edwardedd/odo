@@ -63,7 +63,7 @@ body {
   margin: auto
 }
 .left-column .bottom-block .block-button {
-  
+
   margin-top: 32px;
   padding: 14px;
   width: 100%;
@@ -123,6 +123,7 @@ body {
   z-index: 3;
   display: flex;
   flex-direction: column;
+  top: 0;
 }
 
 .pr-row{
@@ -284,7 +285,7 @@ body {
   background-color: white;
   position: absolute;
   left: 38%;
-  top: 31%;
+  top: 75%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -337,7 +338,7 @@ input[type=radio] {
   display: none;
 }
 
-label {  
+label {
   display: inline-block;
   cursor: pointer;
   font-weight: bold;
@@ -345,7 +346,7 @@ label {
 }
 
 input[type=radio]:checked + label{
-  
+
   color: red;
 }
 
@@ -417,4 +418,56 @@ input[type=radio]:checked + label{
   padding: 6px 8px;
   border: 1px solid transparent;
   color: white;
+}
+
+.numeric_input{
+  display: flex!important;
+  width: 200px;
+  height: 250px;
+  
+  position: absolute;
+  top: 340px;
+  right: 450px;
+  border: 2px solid black;
+
+}
+
+.line{
+  display: flex;
+  height: 25%;
+  width: 100%;
+}
+
+.keyboard{
+  width: 73%;
+  height: 100%;
+}
+
+.num_button{
+  border: 1px solid black;
+  width: 100%;
+  
+  text-align: center;
+  border: 1px solid #A9A9A9;
+  background-color: #DDDDDD;
+}
+
+.keyboard_right{
+  display: flex;
+  flex-direction: column;
+  width: 27%;
+  height: 100%;
+}
+
+.ok_button{
+  background-color: #53a1f4;
+}
+
+.right_btn{
+  height: 50%;
+  border: 1px solid #A9A9A9;
+}
+
+.empty_btn{
+  cursor: default;
 }
