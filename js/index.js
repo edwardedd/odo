@@ -21,4 +21,19 @@
 
 function num(id){
   return document.getElementById(id)
-}
+};
+
+
+const cities = [
+  {name: 'Moscow', population: 12506468},
+  {name: 'Saint Petersburg', population: 5351935},
+  {name: 'Novosibirsk', population: 1612833},
+  {name: 'Kaliningrad', population: 482443},
+  {name: 'Kaluga', population: 336726}
+];
+
+const millionPlusCities = cities.filter(function (e){
+  return e.population > 1000000;
+});
+
+console.log(millionPlusCities)
