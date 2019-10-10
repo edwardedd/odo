@@ -44,9 +44,14 @@ body {
   height: 100%;
 }
 
+.section-two{
+  border: 1px solid violet
+}
+
 .left-column .full-block   {
   width: 240px;
   height: 366px;
+  
 }
 
 .block-image-large{
@@ -114,13 +119,22 @@ body {
   display: flex;
   align-items: center;
   flex-direction: column;
+  justify-content: baseline;
+  height: 470px;
+  margin: 30px 0;
+  
+  border: 1px solid purple
 }
 
-.center-column .product-title,
+.center-column .product-title{
+  width: 100%;
+  text-align: center;
+}
 .center-column .product-description {
   font-size: 14px;
   color: #3c3c3c;
   position: relative;
+  overflow: auto;
 }
 
 .product-popup{
@@ -133,6 +147,7 @@ body {
   flex-direction: column;
   top: 0;
   left: -200px;
+  display: none
 }
 
 .pr-row{
@@ -337,7 +352,7 @@ body {
 
 .measurement_popup{
   width: 200px;
-  height: 250px;
+  /* height: 250px; */
   background-color: white;
   position: absolute;
   left: 38%;
@@ -345,39 +360,41 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: space-around;
+  justify-content: center;
+  border: 2px solid #3c3c3c;
 }
-
-.measurement_popup::before{
-  content: '';
-  background-color: white;
-  width: 30px;
-  height: 30px;
-  position: absolute;
-  transform: rotate(45deg);
-  top: 0%;
-  z-index: 1;
+.left_side_measurment{
+  width: 100%;
 }
-
-.second_row, .third_row, .fourth_row, .fifth_row, .six_row {
+.right_side_measurement{
   display: flex;
-  width: 95%;
-  justify-content: space-around;
+  width: 100%;
+}
+
+
+.measurment_row {
+  display: flex;
+  width: 100%;
+  justify-content: center;
 }
 
 .ceil{
-  border: 1px solid black;
-  width: 30%;
-  height: 30px;
+  border: 1px solid #A9A9A9;
+  width: 34%;
+  height: 45px;
   text-align: center;
+  line-height: 45px;
+  background-color: #DDDDDD;
 }
 
 .main_ceil{
-  border: 1px solid black;
-  width: 92%;
-  height: 30px;
+  border: 1px solid #A9A9A9;
+  width: 100%;
+  height: 45px;
   text-align: center;
   z-index: 2;
+  background-color: #DDDDDD;
+  line-height: 45px;
 }
 
 .door_price_section{
@@ -496,7 +513,7 @@ input[type=radio]:checked + label{
 }
 
 .numeric_input{
-  display: flex!important;
+  /* display: flex!important; */
   width: 270px;
   height: 185px;
   position: absolute;
@@ -504,6 +521,7 @@ input[type=radio]:checked + label{
   right: 450px;
   border: 2px solid black;
   z-index: 1;
+  display: none!important
 }
 
 .numeric_input::before{
@@ -554,4 +572,41 @@ input[type=radio]:checked + label{
 
 .empty_btn{
   cursor: default;
+}
+
+.carousel{
+  width: 100%;
+  height: 200px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.carousel_item{
+  width: 18%;
+  height: 100%;
+  border: 3px solid black;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.carousel_image{
+  width: 140px;
+  height: 90px;
+}
+
+.text_block{
+  border: 1px solid black;
+  width: 95%;
+}
+
+.carousel_description{
+  font-size: 14px;
+}
+
+.carousel_price{
+  text-align: end;
+  font-size: 18px;
+  font-weight: 700;
 }
